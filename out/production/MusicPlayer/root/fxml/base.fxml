@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane fx:id="borderPane" onKeyPressed="#handleKeyPress" onScroll="#handleVolumeScroll" styleClass="borderpane"
+            stylesheets="@../styles/styles.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="root.Controller">
+    <center>
+        <MediaView fx:id="mediaView" managed="false"/>
+    </center>
+
+    <bottom>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="20"/>
+            </padding>
+            <Slider fx:id="durationSlider">
+                <padding>
+                    <Insets left="20" right="20"/>
+                </padding>
+            </Slider>
+
+            <HBox alignment="CENTER">
+                <HBox alignment="CENTER_LEFT" minWidth="150">
+                    <Button fx:id="volumeButton" mnemonicParsing="false" onAction="#handleMute">
+                        <tooltip>
+                            <Tooltip text="Mute (M)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/sharp_volume_up_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Slider fx:id="volumeSlider" styleClass="volumeSlider"/>
+                </HBox>
+
+                <HBox alignment="CENTER" minWidth="200">
+                    <Button fx:id="rewindButton" mnemonicParsing="false" onAction="#handleRewind">
+                        <tooltip>
+                            <Tooltip text="Rewind (Left Arrow)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/sharp_fast_rewind_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="playButton" mnemonicParsing="false" onAction="#handlePause">
+                        <tooltip>
+                            <Tooltip text="Play/Pause (Space)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/sharp_pause_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="forwardButton" mnemonicParsing="false" onAction="#handleForward">
+                        <tooltip>
+                            <Tooltip text="Forward (Right Arrow)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/sharp_fast_forward_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="openButton" mnemonicParsing="false" onAction="#handleOpen">
+                        <tooltip>
+                            <Tooltip text="Open (Ctrl+O)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/baseline_open_in_new_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                    <Button fx:id="playlistButton" mnemonicParsing="false" onAction="#handleOpenPlaylist">
+                        <tooltip>
+                            <Tooltip text="Playlist (P)"/>
+                        </tooltip>
+                        <graphic>
+                            <ImageView>
+                                <Image url="@../media/1x/baseline_featured_play_list_white_24dp.png"/>
+                            </ImageView>
+                        </graphic>
+                    </Button>
+                </HBox>
+
+                <HBox alignment="CENTER_RIGHT" spacing="5">
+                    <Label fx:id="durationLabel" styleClass="durationLabel" text="00:00:00 / 00:00:00"
+                           style="fx-font-family: Microsoft Sans Serif; -fx-font-size: 16;"/>
+                </HBox>
+            </HBox>
+        </VBox>
+    </bottom>
+
+    <top>
+        <VBox spacing="5">
+            <MenuBar>
+                <Menu mnemonicParsing="false" text="File">
+                    <MenuItem mnemonicParsing="false" text="Open File(s) (Ctrl+Shift+O)" onAction="#handleOpenFiles"/>
+                    <MenuItem mnemonicParsing="false" text="Exit (Alt+F4)" onAction="#handleExit"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Playback">
+                    <MenuItem mnemonicParsing="false" text="Close Playback (F4)" fx:id="closePlaybackMenu"/>
+                    <MenuItem mnemonicParsing="false" text="Repeat Playback" fx:id="repeatPlaybackMenu"/>
+                    <MenuItem mnemonicParsing="false" text="Repeat Playlist" fx:id="repeatPlaylistMenu"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Audio">
+                    <MenuItem mnemonicParsing="false" text="Mute (M)" onAction="#handleMute"/>
+                    <MenuItem mnemonicParsing="false" text="Increase Volume (Num+)" onAction="#handleIncreaseVolume"/>
+                    <MenuItem mnemonicParsing="false" text="Decrease Volume (Num-)" onAction="#handleDecreaseVolume"/>
+                </Menu>
+                <Menu mnemonicParsing="false" text="About">
+                    <MenuItem mnemonicParsing="false" text="Program Info" onAction="#handleViewProgramInfo"/>
+                    <MenuItem mnemonicParsing="false" text="Copyright Info" onAction="#handleViewCopyrightInfo"/>
+                    <MenuItem mnemonicParsing="false" text="Version History" onAction="#handleViewVersionHistory"/>
+                    <MenuItem mnemonicParsing="false" text="Shortcuts (S)" onAction="#handleViewShortcuts"/>
+                </Menu>
+            </MenuBar>
+            <HBox alignment="CENTER">
+                <Label fx:id="nowPlayingLabel" styleClass="nowPlayingLabel" style="-fx-font-size: 18;"
+                       text="Now Playing :"/>
+            </HBox>
+        </VBox>
+    </top>
+</BorderPane>

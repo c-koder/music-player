@@ -1,0 +1,83 @@
+1.0
+*playing .mp3 files.
+*ability to pause/resume.
+*volume slider.
+*duration slider.
+*rewind/forward.
+*time duration.
+
+1.1
+*playing .mp4 files.
+*resolution made to preserve window size.
+
+1.2
+*playlist implemented.
+
+1.2.1
+*song addition/removal.
+*song play function.
+*song selection on list based on currently playing song.
+
+1.2.2
+*next, previous functions implemented.
+*styling improved.
+*tooltips added.
+
+1.3
+*shortcut keys updated.
+
+1.3.1
+*menu bar added.
+*drag and drop files improved.
+*replay ability when song has stopped added.
+
+1.3.2
+*ability to save the playlist.
+*ability to retrieve the playlist upon runtime if saved.
+
+1.3.3
+*fixed a bug where dragging a song while the playlist is playing, wont play.
+
+1.3.4
+*added the duration of a playlist song.
+
+1.3.5
+*changed the sliders to change its color according to its position.
+*fixed a bug where the playlist doesn't play in order.
+
+1.4
+*playlist repeat functionality implemented.
+
+1.4.1
+*playback repeat functionality implemented.
+*playlist repeat disabled when playback repeat is enabled and vice versa.
+
+1.4.2
+*menu open files function implemented.
+*exit function implemented.
+
+1.4.3
+*audio menu functions implemented.
+*program info menu implemented.
+*copyright info menu implemented.
+*version history menu implemented.
+*shortcuts menu implemented.
+
+1.4.4
+*shortcuts updated
+*a bug where the previous/next functions in the playlist wont work, fixed.
+
+1.4.5
+*a bug where a single file won't return to 0 in seek slider fixed.
+*a bug where playback repeat won't function fixed.
+*a bug where replay function once the song ended doesn't work fixed.
+*a bug where volume icon won't change fixed.
+
+1.4.6
+*code optimized.
+*playlist functionality improved.
+*loading times reduced.
+*playlist song removal bug fixed.
+
+1.4.7
+*playlist interface updated slightly

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.GridPane?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" stylesheets="@../styles/styles.css" alignment="CENTER" fx:id="gridPane">
+    <padding>
+        <Insets top="20" bottom="20" left="20" right="20"/>
+    </padding>
+    <ScrollPane prefHeight="600" maxWidth="300" prefWidth="600" minWidth="600">
+        <Label wrapText="true" text='
+        Disclaimer&#10;&#10;
+        Last updated: June 04, 2021&#10;&#10;
+        Interpretation and Definitions&#10;
+        Interpretation&#10;
+        The words of which the initial letter is capitalized have meanings defined under the following conditions.&#10;&#10;
+
+        The following definitions shall have the same meaning regardless of whether they appear in singular or in plural.&#10;&#10;
+
+        Definitions&#10;
+        For the purposes of this Disclaimer:&#10;&#10;
+
+        Company (referred to as either "the Company", "We", "Us" or "Our" in this Disclaimer) refers to Music Playah.&#10;&#10;
+
+        Service refers to the Application.&#10;&#10;
+
+        You means the individual accessing the Service, or the company,&#10;
+        or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.&#10;&#10;
+
+        Application means the software program provided by the Company downloaded by You on any electronic device named Music Playah.&#10;&#10;
+
+        Disclaimer&#10;
+        The information contained on the Service is for general information purposes only.&#10;&#10;
+
+        The Company assumes no responsibility for errors or omissions in the contents of the Service.&#10;&#10;
+
+        In no event shall the Company be liable for any special, direct, indirect, consequential,&#10;
+        or incidental damages or any damages whatsoever, whether in an action of contract, negligence or other tort, &#10;
+        arising out of or in connection with the use of the Service or the contents of the Service.&#10;&#10;
+
+        The Company reserves the right to make additions, deletions,&#10;
+        or modifications to the contents on the Service at any time without prior notice.&#10;&#10;
+
+        This Disclaimer has been created with the help of the Disclaimer Generator.&#10;&#10;
+
+        The Company does not warrant that the Service is free of viruses or other harmful components.&#10;&#10;
+
+        External Links Disclaimer&#10;
+        The Service may contain links to external websites that are not provided or maintained by or in any way affiliated with the Company.&#10;&#10;
+
+        Please note that the Company does not guarantee the accuracy, relevance,&#10;
+        timeliness, or completeness of any information on these external websites.&#10;&#10;
+
+        Errors and Omissions Disclaimer&#10;
+        The information given by the Service is for general guidance on matters of interest only.&#10;
+        Even if the Company takes every precaution to insure that the content of the Service is both current and accurate,&#10;
+        errors can occur. Plus, given the changing nature of laws, rules and regulations,&#10;
+        there may be delays, omissions or inaccuracies in the information contained on the Service.&#10;&#10;
+
+        The Company is not responsible for any errors or omissions, or for the results obtained from the use of this information.&#10;&#10;
+
+        Fair Use Disclaimer&#10;
+        The Company may use copyrighted material which has not always been specifically authorized by the copyright owner.&#10;
+        The Company is making such material available for criticism, comment, news reporting, teaching, scholarship, or research.&#10;&#10;
+
+        The Company believes this constitutes a "fair use" of any such copyrighted material as provided&#10;
+        for in section 107 of the United States Copyright law.&#10;&#10;
+
+        If You wish to use copyrighted material from the Service for your own purposes that go beyond fair use,&#10;
+        You must obtain permission from the copyright owner.&#10;&#10;
+
+        Views Expressed Disclaimer&#10;
+        The Service may contain views and opinions which are those of the authors and do not necessarily &#10;
+        eflect the official policy or position of any other author, agency, organization, employer or company, including the Company.&#10;&#10;
+
+        Comments published by users are their sole responsibility and the users will take full responsibility,&#10;
+        liability and blame for any libel or litigation that results from something written in or as a&#10;
+        direct result of something written in a comment. The Company is not liable for any comment published&#10;
+        by users and reserve the right to delete any comment for any reason whatsoever.&#10;&#10;
+
+        No Responsibility Disclaimer&#10;
+        The information on the Service is provided with the understanding that the Company is not herein engaged in rendering legal,&#10;
+        accounting, tax, or other professional advice and services. As such, it should not be used as a substitute&#10;
+        for consultation with professional accounting, tax, legal or other competent advisers.&#10;&#10;
+
+        In no event shall the Company or its suppliers be liable for any special, incidental, indirect,&#10;
+        or consequential damages whatsoever arising out of or in connection with your access or use or&#10;
+        inability to access or use the Service.&#10;&#10;
+
+        "Use at Your Own Risk" Disclaimer&#10;
+        All information in the Service is provided "as is", with no guarantee of completeness, accuracy,&#10;
+        timeliness or of the results obtained from the use of this information, and without warranty of any kind, express&#10;
+        or implied, including, but not limited to warranties of performance, merchantability and fitness for a particular purpose.&#10;&#10;
+
+        The Company will not be liable to You or anyone else for any decision made or action taken in reliance on&#10;
+        the information given by the Service or for any consequential, special or similar damages,&#10;
+        even if advised of the possibility of such damages.&#10;&#10;
+
+        Contact Us&#10;
+        If you have any questions about this Disclaimer, You can contact Us:&#10;&#10;
+
+        By email: deluxe@gmail.com'/>
+    </ScrollPane>
+</GridPane>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.GridPane?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="root.VersionHistoryController"
+          stylesheets="@../styles/styles.css" alignment="CENTER">
+    <padding>
+        <Insets top="15" bottom="15" left="30" right="30"/>
+    </padding>
+    <ScrollPane prefWidth="500" prefHeight="300">
+        <Label fx:id="versionHistoryLabel" style="-fx-font-size: 12"/>
+    </ScrollPane>
+</GridPane>

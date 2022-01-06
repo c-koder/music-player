@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="root.ShortcutsController"
+          stylesheets="@../styles/styles.css" alignment="CENTER">
+    <padding>
+        <Insets top="20" bottom="20" left="30" right="30"/>
+    </padding>
+    <ScrollPane prefWidth="250" prefHeight="200">
+        <HBox alignment="CENTER_LEFT" spacing="10">
+            <Label fx:id="shortcutsLabel"/>
+            <Label fx:id="keysLabel"/>
+        </HBox>
+    </ScrollPane>
+</GridPane>

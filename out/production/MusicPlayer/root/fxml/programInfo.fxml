@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.geometry.Insets?>
+<GridPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="root.ProgramInfoController"
+          stylesheets="@../styles/styles.css" alignment="CENTER">
+    <padding>
+        <Insets top="40" bottom="40" left="40" right="40"/>
+    </padding>
+    <VBox spacing="15">
+        <Label text="Music Playah (64-Bit)" style="-fx-font-size: 17; -fx-underline: true"/>
+        <Label fx:id="versionLabel"/>
+        <Label fx:id="buildDateLabel"/>
+        <Separator/>
+        <Label text="Copyright (C) 2021 [Deluxe Solutions]"/>
+        <Label text="All rights reserved."/>
+        <Label text="Report any issue at: deluxe@gmail.com"/>
+    </VBox>
+</GridPane>
